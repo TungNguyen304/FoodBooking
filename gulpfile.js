@@ -36,7 +36,7 @@ gulp.task("sass", () => {
 gulp.task("webserver", () => {
   return gulp.src("app").pipe(
     webserver({
-      port: 4000,
+      port: 3000,
       livereload: true,
       open: true,
     })
@@ -57,5 +57,6 @@ gulp.task("watch", () => {
 // Default task (gulp 4)
 gulp.task(
   "default",
-  gulp.series("minifyjs", "imagemin", "sass", "webserver", "watch")
+  // gulp.series("minifyjs", "imagemin", "sass", "webserver", "watch"),
+  gulp.series("webserver", "watch")
 );

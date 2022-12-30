@@ -13,9 +13,9 @@
     max-width: 900px;
   }
 
-  .container {
-    font-size: 1.4rem;
-  }
+    .container {
+      font-size: 1.4rem;
+    }
 
   header .header__banner .banner__content .banner__title {
     font-size: 7rem;
@@ -192,7 +192,7 @@
         .order__img {
           img {
             width: 430px;
-            height: 300px;
+            height: 430px;
             object-fit: fill;
           }
 
@@ -233,7 +233,7 @@
   }
 
   .booking .booking__info form {
-    width: 90%;
+    width: 100%;
   }
 
   .slick-slide {
@@ -288,8 +288,8 @@
 
   .slide p, .order .order__desc {
     text-align: justify;
+    width: 90vw;
   }
-  
 
   .footer__top {
     display: flex;
@@ -372,6 +372,16 @@
         &::after {
             background-color: unset !important;
         }
+    }
+
+    .slick-slide {
+      width: 60vw !important;
+      height: 200px !important;
+      flex-shrink: 0 !important;
+    }
+
+    .slide__item.slick-center {
+      height: 250px !important;
     }
 }
 
