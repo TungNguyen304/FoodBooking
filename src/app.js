@@ -9,6 +9,7 @@ $(document).ready(function(){
         variableWidth: true,
         dots: true,
         arrow: true,
+        focusOnSelect: true,
         responsive: [
             {
               breakpoint: 768,
