@@ -265,6 +265,12 @@
   }
 }
 
+@media screen and (min-width: 461px) and (max-width: 550px) {
+  footer .footer__mid>div:nth-child(2) {
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 500px) {
   header {
     .header__top {
