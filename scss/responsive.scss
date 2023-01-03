@@ -90,6 +90,7 @@
           width: 100%;
         }
         div img {
+          width: 70px;
           &:nth-child(1) {
             top: -30px;
           }
@@ -105,6 +106,9 @@
         }
       }
     }
+  }
+  header .header__banner .banner__content .banner__question img {
+    width: 50px;
   }
 }
 
