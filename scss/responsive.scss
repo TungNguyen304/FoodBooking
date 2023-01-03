@@ -21,12 +21,14 @@
     font-size: 7rem;
   }
 
-  .topic .topic__content {
-    .topic__content-main {
-      font-size: 2.2rem;
-    }
-    .topic__content-sub {
-      font-size: 2rem;
+  .topic {
+    .topic__content {
+      .topic__content-main {
+        font-size: 2rem;
+      }
+      .topic__content-sub {
+        font-size: 2rem;
+      }
     }
   }
 
@@ -209,7 +211,6 @@
     .topic__main {
       width: 100%;
       margin: 0;
-      height: 200px;
       margin-bottom: 20px;
       text-shadow: 1px 1px black;
     }
@@ -218,7 +219,6 @@
       margin: 0;
 
       & > div img {
-        height: 200px;
         object-fit: cover;
       }
     }
@@ -401,6 +401,12 @@
         }
       }
     }
+  }
+
+  .topic .topic__content {
+    top: 10px;
+    left: 10px;
+    width: 60%;
   }
 }
 
