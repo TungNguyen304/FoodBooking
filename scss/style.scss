@@ -694,3 +694,36 @@ footer {
     opacity: 0;
   }
 }
+
+
+input[type="date"],
+input[type="time"] {
+  position: relative;
+}
+
+input[type="date"]:after {
+  content: "\f073"; 
+  font-family: 'FontAwesome';
+  color: #555;
+  padding: 0 5px;
+}
+
+input[type="time"]:after {
+  content: "\f017"; 
+  font-family: 'FontAwesome';
+  color: #555;
+  padding: 0 5px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator, 
+input[type="time"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  color: transparent;
+  background: transparent;
+}
