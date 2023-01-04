@@ -57,6 +57,6 @@ gulp.task("watch", () => {
 // Default task (gulp 4)
 gulp.task(
   "default",
-  // gulp.series("minifyjs", "imagemin", "sass", "webserver", "watch"),
-  gulp.series("webserver", "watch")
+  gulp.series("minifyjs", "imagemin", "sass", "webserver", "watch"),
+  // gulp.series("webserver", "watch")
 );

@@ -45,17 +45,21 @@ function handleActiveNavItem() {
     const close = document.querySelector(".wrap_menu__mobi div ul div");
     if (menuIcon) {
       menuIcon.onclick = () => {
-        console.log(1);
         menu__mobi.style.display = "block";
-        menu__mobi.style.opacity = "1";
-        wrap_menu__mobi.style.right = "0%";
+        menu__mobi.style.animation = "showUp 0.6s";
+        wrap_menu__mobi.style.animation = "growthUp 0.6s";
+        wrap_menu__mobi.style.right = "0px";
+        
       };
     }
     if (close)
       close.onclick = () => {
-        menu__mobi.style.opacity = "0";
+        menu__mobi.style.animation = "showDown 0.6s";
         wrap_menu__mobi.style.right = "100%";
-        menu__mobi.style.display = "none";
+        wrap_menu__mobi.style.animation = "growthDown 0.6s";
+        setTimeout(() => {
+          menu__mobi.style.display = "none";
+        }, 600)
       };
   }
   

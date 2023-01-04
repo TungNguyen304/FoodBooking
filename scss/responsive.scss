@@ -110,6 +110,10 @@
   header .header__banner .banner__content .banner__question img {
     width: 50px;
   }
+
+  header .header__banner .banner__content {
+    padding-top: 40px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -143,7 +147,7 @@
 
   header {
     .header__top .header__contact {
-      .header__text .header__phone {
+      .header__text .header__phone a{
         font-size: 2.6rem;
       }
 
@@ -179,30 +183,37 @@
     }
   }
 
-  .order .order__wrap {
+  .order {
     margin-top: 80px;
-    .order__list {
-      flex-direction: column;
-
-      .order__item {
-        margin-bottom: 40px;
-        .order__img {
-          img {
-            // width: 430px;
-            height: auto;
-            object-fit: fill;
+    margin-bottom: 60px;
+    .order__wrap {
+      margin-top: 60px;
+      .order__list {
+        flex-direction: column;
+  
+        .order__item {
+          margin-bottom: 40px;
+          &:last-child {
+            margin-bottom: 0;
           }
-
-          .order__virtual {
-            height: 140px;
+          .order__img {
+            img {
+              // width: 430px;
+              height: auto;
+              object-fit: fill;
+            }
+  
+            .order__virtual {
+              height: 140px;
+            }
           }
-        }
-
-        .order__content {
-          .order__item-btn {
-            width: 160px;
-            height: 40px;
-            font-size: 1.4rem;
+  
+          .order__content {
+            .order__item-btn {
+              width: 160px;
+              height: 40px;
+              font-size: 1.4rem;
+            }
           }
         }
       }
@@ -246,6 +257,20 @@
       margin-top: -20px;
     }
   }
+
+  .slide .slide__wrap {
+    margin-top: 60px;
+    margin-bottom: 90px;
+  }
+
+  .booking {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  footer .footer__bot {
+    margin-top: 40px;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -270,7 +295,7 @@
 }
 
 @media screen and (min-width: 461px) and (max-width: 550px) {
-  footer .footer__mid>div:nth-child(2) {
+  footer .footer__mid .footer__contact {
     width: 50%;
   }
 }
@@ -279,9 +304,12 @@
   header {
     .header__top {
       flex-direction: column;
-
+      padding: 20px 0 40px;
       .header__logo {
         margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
       }
     }
 
@@ -297,7 +325,7 @@
     }
   }
 
-  .slide p,
+  .slide .slide__desc,
   .order .order__desc {
     text-align: justify;
     width: 90vw;
@@ -324,6 +352,10 @@
   header .header__banner .banner__img div img:nth-child(1) {
     left: -30px;
   }
+
+  header .header__top .header__contact .header__text .header__phone a{
+    font-size: 2.4rem;
+  }
 }
 
 @media screen and (max-width: 460px) {
@@ -345,7 +377,7 @@
       text-align: justify;
       flex-direction: column;
 
-      & > div {
+      .footer__desc, .footer__contact {
         width: 100%;
       }
 
